@@ -1,0 +1,73 @@
+/*Se importa las fuentes para poder utulizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+
+
+.encabezado {
+  display: flex;
+  background-color: rgb(233, 137, 255);
+  height: 2cm;
+  align-items: center;
+}
+
+
+.encabezado > div {
+
+
+  .hamburguesita {
+    margin-left: 10px;
+
+
+  }
+
+
+  .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+}
+
+
+
+
+.titulo {
+  font-family:sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+
+.boton_Empezar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2cm;
+    background-color: rgb(69, 234, 113);
+  }
+ 
+.boton_Empezar > div {
+
+
+  .boton {
+    color: rgb(27, 73, 5);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Outfit;
+}
+
+
+}
+
+
+#grafica2derecha {
+  /*Necesito que esta grafica se ubique en hacia la derecha*/
+  width: 200px;
+  height: 100px;
+}
