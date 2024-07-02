@@ -77,4 +77,5 @@
   /*Necesito que esta grafica se ubique en hacia la derecha*/
   width: 200px;
   height: 100px;
+  float: right;
 }
