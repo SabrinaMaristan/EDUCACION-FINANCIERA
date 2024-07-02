@@ -2,70 +2,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-
-
-
 .encabezado {
   display: flex;
-  background-color: rgb(233, 137, 255);
   height: 2cm;
   align-items: center;
 }
 
 
-.encabezado > div {
 
+.encabezado > div {
 
   .hamburguesita {
     margin-left: 10px;
-
-
   }
-
 
   .logo {
   width: 100px;
   height: 100px;
   margin-bottom: 10px;
 }
-
-
 }
 
-
-
-
 .titulo {
-  font-family:sans-serif;
+  font-family:Space Grotesk;
   font-size: 40px;
   text-align: center;
 }
 
-
-
-
-.boton_Empezar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2cm;
-    background-color: rgb(69, 234, 113);
-  }
- 
-.boton_Empezar > div {
-
-
-  .boton {
-    color: rgb(27, 73, 5);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Outfit;
+.button {
+  display: flex;
+  border-radius: 4px;
+  background-color: rgb(69, 234, 113);
+  border: none;
+  color: rgb(27, 73, 5);
+  font-family: Outfit;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 28px;
+  padding: 30px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-
+/* FLECHITTA: movimiento */
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
+.button span:after {
+  content: '\00bb'; /* flechitas */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+/* MOVIMIENTO DE LETRA */
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* IMAGENES */
 #grafica2derecha {
   /*Necesito que esta grafica se ubique en hacia la derecha*/
   width: 200px;
