@@ -2,30 +2,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-.encabezado {
-  display: flex;
-  height: 2cm;
-  align-items: center;
-}
-
-
-
-.encabezado > div {
-
-  .hamburguesita {
-    margin-left: 10px;
+  
+   /* Estilos para el botón del menú */
+   .caja_menu {
+    background-color: #12AAB5;
+    color: rgb(5, 52, 48);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
   }
 
+      /*La clase dropdown da un comportamiento de caja al código con la capacidad de ajustar la posición relativa y mantener el flujo de línea en el contenido.*/
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px; /* Margen derecho para separar el menú del logo */
+      margin-top: 1%;
+    }
+  
+    /* Estilos para el contenido del menú desplegable */
+  .contenido_del_dropdown {
+    display: none;
+    /*Esta propiedad inicialmente oculta el contenido del menu*/
+    position: absolute;
+    /*Esto posiciona al elemento de forma absoluta con respecto a su elemento padre más cercano que tenga una posición diferente de static, en este caso seria "position: relative" de la clase dropdown */
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*Aplica una sombra al menú desplegable para darle profundidad y hacer que parezca que se levanta del fondo.*/
+    z-index: 1;
+    /*El z-index es para indicar si un elemento va a etsra arriba o or debajo de otro, algo muy paresido a las capas*/
+    border-radius: 4px;
+    /* Agrega bordes redondeados al menú desplegable */
+    padding: 8px 0;
+    /* Espaciado interior del menú desplegable */
+    margin-top: 10%;
+  }
+  
+   /* Estilos para los enlaces dentro del menú desplegable */
+  .contenido_del_dropdown a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333; 
+  }
+  
+    .contenido_del_dropdown a:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el cursor sobre los enlaces */
+  }
+  
+    /* Mostrar el menú desplegable cuando se hace hover sobre el botón */
+  .dropdown:hover .contenido_del_dropdown {
+    display: block;
+  }
+  
+    /* Cambiar el color de fondo del botón al hacer hover sobre el área del dropdown */
+  .dropdown:hover .caja_menu {
+    background-color: #0c676d;
+    color: white; /* Cambia el color del texto del botón al hacer hover */
+  }
+
+  /* Estilos para el logo */
   .logo {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-}
+    width: 100px;
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    vertical-align: middle; /* Alinea verticalmente con respecto al texto */
+    float: right;
+    margin-top: 1%;
+  }
 
 .titulo {
   font-family:Space Grotesk;
-  font-size: 40px;
+  position: relative;
+  top: 100px;
+  font-size: 60px;
   text-align: center;
 }
 
@@ -34,18 +87,18 @@
   border-radius: 4px;
   background-color: rgb(69, 234, 113);
   border: none;
-  color: rgb(27, 73, 5);
+  color: #1b4905;
   font-family: Outfit;
   text-decoration: none;
   justify-content: center;
   font-size: 28px;
   padding: 30px;
-  width: 100%;
+  width: 96%;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-/* FLECHITTA: movimiento */
+/* FLECHITA: movimiento */
 .button span {
   cursor: pointer;
   display: inline-block;
@@ -73,9 +126,10 @@
 }
 
 /* IMAGENES */
-#grafica2derecha {
-  /*Necesito que esta grafica se ubique en hacia la derecha*/
-  width: 200px;
-  height: 100px;
-  float: right;
+.grafica{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 7%;
 }
