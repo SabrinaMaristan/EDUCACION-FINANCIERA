@@ -1,0 +1,41 @@
+/*Se importa las fuentes para poder utulizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: Outfit;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+#son, #como {
+    display: block;
+    margin: 5%;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #12AAB5;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#contenido {
+    text-align: justify;
+}
+
+.conjuntoContenidos {
+    display: flex;
+    background-color: blue;
+}
