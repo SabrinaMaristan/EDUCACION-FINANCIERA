@@ -4,7 +4,9 @@
  
 .Encabezado {
   display: flex;
-  background-color: rgb(55, 108, 68);
+  background-color: rgba(102, 110, 108, 0.705);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /*Aplica una sombra al menú desplegable para darle profundidad y hacer que parezca que se levanta del fondo.*/
   align-items: center;
   align-content: center;
   justify-content: space-between;
