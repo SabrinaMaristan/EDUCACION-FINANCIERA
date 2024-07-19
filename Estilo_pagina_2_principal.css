@@ -16,7 +16,6 @@
       height: auto; /* Ajusta la altura automáticamente según el ancho */
       vertical-align: middle; /* Alinea verticalmente con respecto al texto */
       float: right;
-      margin-top: 1%;
     }
   
     .index {
