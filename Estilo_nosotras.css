@@ -1,0 +1,18 @@
+/*Se importa las fuentes para poder utulizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+h1{
+    margin-left: 25px; 
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family: Outfit;
+}
+
+p {
+    margin-left: 25px;
+    margin-right: 400px;
+    font-family: Outfit;
+    font-size: 18px;
+    text-align: justify;
+    
+}

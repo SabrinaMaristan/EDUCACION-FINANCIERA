@@ -2,35 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
  
-.Encabezado {
-  display: flex;
-  background-color: rgba(102, 110, 108, 0.705);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /*Aplica una sombra al menú desplegable para darle profundidad y hacer que parezca que se levanta del fondo.*/
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-}
-
-.Encabezado > div {
-   /* Estilos para el logo */
-   .logo {
-    width: 100px;
-    height: auto; /* Ajusta la altura automáticamente según el ancho */
-    vertical-align: middle; /* Alinea verticalmente con respecto al texto */
-    float: right;
-    margin-top: 1%;
-  }
-
-  .index {
-      font-size: 16px;
-      font-family: monospace;
-      color: #ffffff;
-      text-decoration: none;
-  }
-}
-
-
 .titulo {
   font-family:Space Grotesk;
   position: relative;
@@ -42,9 +13,9 @@
 .button {
   display: flex;
   border-radius: 4px;
-  background-color: rgb(69, 234, 113);
+  background-color: #a9dba8;
   border: none;
-  color: #1b4905;
+  color: #315a1e;
   font-family: Outfit;
   text-decoration: none;
   justify-content: center;

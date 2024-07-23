@@ -1,31 +1,6 @@
 /*Se importa las fuentes para poder utulizarla*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.Encabezado {
-    display: flex;
-    background-color: #09496b77;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-  }
-  
-  .Encabezado > div {
-     /* Estilos para el logo */
-     .logo {
-      width: 100px;
-      height: auto; /* Ajusta la altura automáticamente según el ancho */
-      vertical-align: middle; /* Alinea verticalmente con respecto al texto */
-      float: right;
-    }
-  
-    .index {
-        font-size: 16px;
-        font-family: monospace;
-        color: #ffffff;
-        text-decoration: none;
-    }
-  }
-  
 
 body {
     font-family: Outfit;
