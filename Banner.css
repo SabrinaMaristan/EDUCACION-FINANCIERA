@@ -6,6 +6,7 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    justify-content: space-around;
   }
   
   .Encabezado > div {
@@ -23,7 +24,6 @@
       font-family: monospace;
       color: #ffffff; /* Color inicial del texto (blanco) */
       text-decoration: none;
-      margin-left: 20px;
       position: relative; /* Importante para posicionar el pseudo-elemento correctamente */
       transition: color 0.3s ease; /* Transición para el cambio de color del texto */
   }
