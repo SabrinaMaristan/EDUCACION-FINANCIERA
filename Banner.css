@@ -7,7 +7,7 @@
   background-color: #3b8787d2;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 1000; /* Asegura que esté por encima de otros contenidos */
 }
 
@@ -19,16 +19,21 @@
       height: auto; /* Ajusta la altura automáticamente según el ancho */
       vertical-align: middle; /* Alinea verticalmente con respecto al texto */
       float: right;
-      margin-top: 1%;
+      margin-top: 1%;    
     }
 
     .index {
+      margin-top: 2cm; /* Separación desde el encabezado */
+      text-align: center;
       font-size: 16px;
       font-family: monospace;
       color: #ffffff; /* Color inicial del texto (blanco) */
       text-decoration: none;
       position: relative; /* Importante para posicionar el pseudo-elemento correctamente */
       transition: color 0.3s ease; /* Transición para el cambio de color del texto */
+      margin-bottom: 2cm; /* Espacio entre cada sección de contenido */
+      padding: 20px;
+      
   }
   
 
