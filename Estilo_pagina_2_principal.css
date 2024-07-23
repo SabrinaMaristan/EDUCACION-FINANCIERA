@@ -11,6 +11,14 @@ body {
     background-attachment: fixed; 
 }
 
+#texto {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    font-size: 25px;
+    text-align: center;
+    font-family: Outfit;
+}
+
 #CONTAINER {
     display: flex;
     justify-content: center;
@@ -36,13 +44,13 @@ body {
     width: 500px;
     height: 400px;
     border-radius: 3%;
-    background-color: #3b8787;
+    background-color: #09486b; 
 }
 
 .adulto:hover{
     transform: scale(1.05);
     color: rgb(222, 234, 222);
-    background-color: #09486b; 
+    background-color:  #3b8787;
 }
 
 .ninio {
