@@ -4,9 +4,14 @@
 
 body {
     font-family: Outfit;
-    }
+    background-image: url(/Importancia-Finanzas.jpg); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; 
+}
 
-div {
+#CONTAINER {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,9 +40,9 @@ div {
 }
 
 .adulto:hover{
-  transform: scale(1.05);
-  color: rgb(222, 234, 222);
-  background-color: #09486b; 
+    transform: scale(1.05);
+    color: rgb(222, 234, 222);
+    background-color: #09486b; 
 }
 
 .ninio {
