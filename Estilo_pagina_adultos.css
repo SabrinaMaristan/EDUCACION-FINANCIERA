@@ -3,7 +3,6 @@
 
 body{
     font-family: Outfit;
-    margin: 2%;
 }
 
 a {
@@ -12,7 +11,6 @@ a {
 }
 
 a:hover {
-    font-size: larger;
     text-decoration: underline;
 }
 
@@ -29,7 +27,11 @@ a:hover {
     width: 75%;
     height: auto;
     border-radius: 10px;
-    background-color: #12AAB5;
+    background-color: #09486b; 
+}
+
+.conjuntoContenidos {
+    display: block; /* Para que actue como "bloque", uno abajo del otro.*/ 
 }
 
 #titulo {
@@ -44,6 +46,3 @@ a:hover {
     width: 90%;
 }
 
-.conjuntoContenidos {
-    display: block; /* Para que actue como "bloque", uno abajo del otro.*/ 
-}
