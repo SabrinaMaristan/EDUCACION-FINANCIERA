@@ -8,6 +8,8 @@ body {
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center; /* Centra la imagen */
   background-attachment: fixed; 
+  margin-top: 4cm; /* Ajusta este valor según el espacio que quieras entre el encabezado y el texto */
+
 }
 
 
@@ -16,7 +18,7 @@ body {
   font-family:Space Grotesk;
   position: relative;
   top: 100px;
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
 }
 
