@@ -4,7 +4,7 @@
   top: 0; /* Para asegurar que esté pegado en la parte superior */
   left: 0; /* Asegura que el encabezado esté alineado completamente a la izquierda */
   width: 100%; /* Ocupa el ancho completo de la pantalla */
-  background-color: #3b8787d2;
+  background-color: #092020d2;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
     .index {
       margin-top: 2cm; /* Separación desde el encabezado */
       text-align: center;
-      font-size: 16px;
+      font-size: 20px;
       font-family: monospace;
       color: #ffffff; /* Color inicial del texto (blanco) */
       text-decoration: none;
@@ -41,7 +41,7 @@
   .index::before {
       content: ''; /* Pseudo-elemento para simular el subrayado */
       position: absolute;
-      bottom: 0;
+      bottom: 18px; 
       left: 50%; /* Coloca el pseudoelemento en el centro horizontal */
       transform: translateX(-50%); /*La propiedad transform en CSS permite aplicar transformaciones a un elemento, como moverlo, rotarlo o escalarlo.*/  /*translateX(-50%): Esta transformación desplaza el elemento horizontalmente en relación a su propio tamaño. El valor -50% significa que el elemento se moverá hacia la izquierda un 50% de su propio ancho.*/
       width: 0;
@@ -54,14 +54,14 @@
   /* Cambiar el color del subrayado a negro */
   .index:hover::before {
       width: 100%; /* Agrandar el subrayado al 100% del ancho del texto */
-      background-color: #000000;
+      background-color: #878787;
   }
   
 
   /* Cambio de color del texto a negro cuando se pasa el ratón por encima */
   .index:hover {
       cursor: pointer;
-      color: #000000;
+      color: #878787;
       text-decoration: none; /* Quitamos el subrayado normal del texto */
   }
 }
