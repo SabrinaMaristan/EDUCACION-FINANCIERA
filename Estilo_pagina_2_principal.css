@@ -1,4 +1,4 @@
-/*Se importa las fuentes para poder utulizarla*/
+/*Se importan las fuentes para poder utilizarlas*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 
@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen */
     background-attachment: fixed; 
-    margin-top: 3cm; /* Ajusta este valor según el espacio que quieras entre el encabezado y el texto */
+    margin-top: 3cm; /* Ajusta el valor entre el encabezado y el texto */
     margin-left: 1cm;
 }
 
@@ -26,6 +26,7 @@ body {
     align-items: center;
     width: 90%; /* Respecto a la página.*/
     margin: 0 auto; /* Centrar horizontalmente el contenedor principal. */
+    margin-top: 6%;
 }
 
 #LINKS {
@@ -42,24 +43,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     border-radius: 3%;
-    background-color: #09486b; 
+    background-color: #a9dba8;
+   /* #09486b azul oscuro */
 }
 
 .adulto:hover{
     transform: scale(1.05);
     color: rgb(222, 234, 222);
-    background-color:  #3b8787;
+    background-color: #3b8787;
 }
 
 .ninio {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
     border-radius: 3%;
     background-color: #cff09f;
 
@@ -67,5 +69,5 @@ body {
 
 .ninio:hover{
     transform: scale(1.05);
-    background-color: #a9dba8; 
+    background-color: #3b8787; 
   }
