@@ -28,9 +28,9 @@ body {
   left: 0;
   display: flex;
   border-radius: 4px;
-  background-color:  #a9dba8;
+  background-color:  rgba(17, 79, 123, 0.898);
   border: none;
-  color: #315a1e;
+  color: #dbdfe4;
   font-family: Outfit;
   text-decoration: none;
   justify-content: center;
