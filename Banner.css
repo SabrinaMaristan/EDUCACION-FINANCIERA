@@ -4,7 +4,7 @@
   top: 0; /* Para asegurar que esté pegado en la parte superior */
   left: 0; /* Asegura que el encabezado esté alineado completamente a la izquierda */
   width: 100%; /* Ocupa el ancho completo de la pantalla */
-  background-color: #0a7070d2;
+  background-color: #036e6ed2;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
@@ -54,14 +54,14 @@
   /* Cambiar el color del subrayado a negro */
   .index:hover::before {
       width: 100%; /* Agrandar el subrayado al 100% del ancho del texto */
-      background-color: #878787;
+      background-color: #000000;
   }
   
 
   /* Cambio de color del texto a negro cuando se pasa el ratón por encima */
   .index:hover {
       cursor: pointer;
-      color: #878787;
+      color: #000000;
       text-decoration: none; /* Quitamos el subrayado normal del texto */
   }
 }
