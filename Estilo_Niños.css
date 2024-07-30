@@ -1,0 +1,23 @@
+/*Se importa las fuentes para poder utulizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+    font-family: Outfit;
+    margin-top: 3cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.videos_text{
+    display:flex;
+    justify-content: space-around;
+    background-color: #09486b; 
+    margin-bottom: 30px;
+}
+
+.videos{
+    display: flex;
+    border-radius: 50%;
+    justify-content: space-around;
+}
+/*una funcion de como va a funcionar por dentro*/
