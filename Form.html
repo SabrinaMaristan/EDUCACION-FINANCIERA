@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <script src="log_in.js"></script>
+    <link rel="stylesheet" href="log_in.css">
+</head>
+<body>
+
+<div class="loginContainer">
+    
+    <h1>Log-In</h1>
+
+    <form id="form" onsubmit="return logIn()">
+
+        <div class="campoForm">
+        <label>Username:</label>
+        <input id="user" type="text" placeholder="Write your name" maxlength="30">
+        </div>
+
+        <div class="campoForm">
+        <label>Password:</label>
+        <input id="passwordid" type="password" placeholder="Write a password" maxlength="10">
+        </div>
+
+        <button type="submit">Log-In</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*Se importa las fuentes para poder utulizarla*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit, sans-serif; /* Añade una fuente secundaria en caso de que la fuente principal no esté disponible */
+    background-image: url(/ImportanciaFinanzas.jpg); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; 
+}
+
+
+.loginContainer {
+    background-color: #298dc3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+    color: rgb(255, 255, 255);
+}
+
+/*Creo un contenedor para que envuelva cada etiqueta y campo de entrada en un contenedor */
+.campoForm{
+    margin-bottom: 30px;  /*Añade un margen inferior a los elementos*/
+}
+
+/* Estiliza epecificamente todas las etiquetas label que se encuentren dentro del contendor */
+.campoForm label {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+/* Estiliza epecificamente todas las etiquetas input que se encuentren dentro del contendor */
+.campoForm input {
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
+    border-style: solid;/*Binda un borde solido*/
+    padding-left: 10px; /* Añade relleno a la izquierda del texto del input */
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background-color: rgb(30, 61, 116);
+    color: rgb(255, 255, 255);
+}
