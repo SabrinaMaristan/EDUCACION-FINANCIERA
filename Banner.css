@@ -1,67 +1,64 @@
+/* Estilos para el logo */
+.logo {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  top: 0.5%;
+  left: 10px;
+  z-index: 1000;
+}
+
+/* Estilos para el encabezado */
 .Encabezado {
   display: flex;
-  position: fixed; /* Para que el encabezado se mantenga fijo en la parte superior */
-  top: 0; /* Para asegurar que esté pegado en la parte superior */
-  left: 0; /* Asegura que el encabezado esté alineado completamente a la izquierda */
-  width: 100%; /* Ocupa el ancho completo de la pantalla */
-  background-color:  #008989;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2cm;
+  width: 100%;
+  background-color: #008989;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
-  z-index: 1000; /* Asegura que esté por encima de otros contenidos */
+  z-index: 1; /* Asegura que el encabezado esté por debajo del logo */
 }
 
-  
-  .Encabezado > div {
-     /* Estilos para el logo */
-     .logo {
-      width: 100px;
-      height: auto; /* Ajusta la altura automáticamente según el ancho */
-      vertical-align: middle; /* Alinea verticalmente con respecto al texto */
-      float: right;
-      margin-top: 1%;    
-    }
+/* Estilos para los elementos dentro del encabezado */
+.Encabezado .index {
+  margin-top: 2cm;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  margin-bottom: 2cm;
+  padding: 20px;
+}
 
-    .index {
-      margin-top: 2cm; /* Separación desde el encabezado */
-      text-align: center;
-      font-size: 20px;
-      font-family: monospace;
-      color: #ffffff; /* Color inicial del texto (blanco) */
-      text-decoration: none;
-      position: relative; /* Importante para posicionar el pseudo-elemento correctamente */
-      transition: color 0.3s ease; /* Transición para el cambio de color del texto */
-      margin-bottom: 2cm; /* Espacio entre cada sección de contenido */
-      padding: 20px;
-      
-  }
-  
+/* Pseudo-elemento ::before para simular el subrayado */
+.index::before {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
 
-  /*Un pseudoelemento ::before en CSS te permite agregar contenido adicional antes del contenido real de un elemento HTML, sin necesidad de modificar el HTML directamente. Es una forma de añadir elementos visuales o texto decorativo mediante CSS.*/
-  .index::before {
-      content: ''; /* Pseudo-elemento para simular el subrayado */
-      position: absolute;
-      bottom: 18px; 
-      left: 50%; /* Coloca el pseudoelemento en el centro horizontal */
-      transform: translateX(-50%); /*La propiedad transform en CSS permite aplicar transformaciones a un elemento, como moverlo, rotarlo o escalarlo.*/  /*translateX(-50%): Esta transformación desplaza el elemento horizontalmente en relación a su propio tamaño. El valor -50% significa que el elemento se moverá hacia la izquierda un 50% de su propio ancho.*/
-      width: 0;
-      height: 2px; /* Altura inicial del subrayado */
-      background-color: #ffffff; /* Color inicial del subrayado (blanco) */
-      transition: width 0.3s ease, background-color 0.3s ease; /* Transición para animar el ancho y el color del subrayado */
-  }
-  
+/* Cambiar el color del subrayado a negro */
+.index:hover::before {
+  width: 100%;
+  background-color: #000000;
+}
 
-  /* Cambiar el color del subrayado a negro */
-  .index:hover::before {
-      width: 100%; /* Agrandar el subrayado al 100% del ancho del texto */
-      background-color: #000000;
-  }
-  
-
-  /* Cambio de color del texto a negro cuando se pasa el ratón por encima */
-  .index:hover {
-      cursor: pointer;
-      color: #000000;
-      text-decoration: none; /* Quitamos el subrayado normal del texto */
-  }
+/* Cambio de color del texto a negro cuando se pasa el ratón por encima */
+.index:hover {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
 }
