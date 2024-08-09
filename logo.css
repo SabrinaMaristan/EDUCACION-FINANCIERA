@@ -1,0 +1,11 @@
+/* Estilos para el logo */
+.logo {
+    width: 100px;
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    position: fixed; /* Fija el logo en la pantalla */
+    top: 1cm; /* Margen superior de 1 cm */
+    right: 1cm; /* Margen derecho de 1 cm, puedes ajustar según necesites */
+    z-index: 1000; /* Asegura que esté por encima de otros contenidos */
+}
+
+  
