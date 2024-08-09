@@ -10,7 +10,7 @@ function logIn() {
 
     if (username.length < 8 || username.length > 20)
     {
-        alert ("The username must be between 8 and 20 characters");
+        alert("The username must be between 8 and 20 characters");
         return false;
     }
 
@@ -22,6 +22,5 @@ function logIn() {
     alert("Welcome! You are in now!")
     alert("Your username is " + username + "and you password is " + password)
     return true;
-
 
 }
