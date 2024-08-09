@@ -4,7 +4,7 @@
   top: 0; /* Para asegurar que esté pegado en la parte superior */
   left: 0; /* Asegura que el encabezado esté alineado completamente a la izquierda */
   width: 100%; /* Ocupa el ancho completo de la pantalla */
-  background-color:   rgba(17, 79, 123, 0.898);
+  background-color:  #008989;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
