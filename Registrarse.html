@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registarse</title>
+    <script src="registrarse.js"></script>
+    <link rel="stylesheet" href="log_in.css"> <!-- No es necesario un CSS nuevo, comparten el mismo estilo -->
+    <link rel="stylesheet" href="Banner.css">
+</head>
+<body>
+    <div>
+        <img src="Logo Educación Financiera.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="Encabezado">
+       
+        <div>
+           <a href="index.html" class="index">Inicio</a>
+        </div>
+
+        <div>
+           <a href="Nosotras.html" class="index">Desarrolladoras</a>
+        </div>
+
+  </div>
+
+
+<div class="loginContainer">
+    
+    <h1>Cree una cuenta</h1>
+
+    <form id="formulario" onsubmit="return signUp()">
+
+        <div class="campoForm">
+        <label>Nombre:</label>
+        <input id="IDnombre_del_usuario" type="text" placeholder="Escriba su nombre" maxlength="30">
+        </div>
+        
+        <div class="campoForm">
+            <label>Nombre de Usuario:</label>
+            <input id="IDusuario" type="text" placeholder="Cree un nombre para su uruario" maxlength="30">
+            </div>
+
+        <div class="campoForm">
+        <label>Contraseña:</label>
+        <input id="IDcontrasenia" type="password" placeholder="Cree una contraseña" maxlength="10">
+        </div>
+
+        <button type="submit">Registarse</button>
+    </form>
+</div>
+
+<div id="menssage_id"></div>
+
+</body>
+</html>
