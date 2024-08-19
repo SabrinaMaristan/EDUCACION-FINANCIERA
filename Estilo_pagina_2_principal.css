@@ -4,7 +4,7 @@
 
 body {
     font-family: Outfit;
-    background-image: url(/ImportanciaFinanzas.jpg); /* Ruta a la imagen */
+    background-image: url(imgs/ImportanciaFinanzas.jpg); /* Ruta a la imagen */
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen */
