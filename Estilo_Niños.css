@@ -8,10 +8,20 @@ body{
     margin-right: 1cm;
 }
 
+#contenido {
+    text-align: justify;
+    margin: 2%;
+    width: 90%;
+}
+
+p {    
+    font-size: 18px;
+}
+
 .videos_text{
     display:flex;
     justify-content: space-around;
-    background-color: #096b5b; 
+    background-color: #a5c3c5;  
     margin-bottom: 30px;
 }
 
