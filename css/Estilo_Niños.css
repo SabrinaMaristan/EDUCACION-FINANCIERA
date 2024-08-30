@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body{
+    display: block;
     font-family: Outfit;
     margin-top: 3cm;
     margin-left: 1cm;
@@ -26,7 +27,7 @@ p {
 }
 
 .videos{
-    display: flex;
+    display: block;
     border-radius: 50%;
-    justify-content: space-around;
+    
 }
