@@ -1,31 +1,26 @@
 /* Estilos para el logo */
 .logo {
   width: 100px;
-  height: auto;
-  position: fixed;
-  top: 0.5%;
-  left: 10px;
-  z-index: 1000;
-  position: fixed;
+  padding: 2%;
 }
 
 /* Estilos para el encabezado */
 .Encabezado {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
   position: fixed;
   top: 0;
   left: 0;
-  height: 2cm;
   width: 100%;
   background-color: #008989;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Asegura que el encabezado esté por debajo del logo */
+  margin-bottom: 20%;
 }
 
 /* Estilos para los elementos dentro del encabezado */
-.Encabezado .index {
+.index {
   margin-top: 2cm;
   text-align: center;
   font-size: 20px;
