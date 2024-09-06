@@ -29,12 +29,7 @@
     <h1>Cree una cuenta</h1>
 
     <form id="formulario" onsubmit="return signUp()">
-
-        <div class="campoForm">
-        <label>Nombre:</label>
-        <input id="IDnombre_del_usuario" type="text" placeholder="Escriba su nombre" maxlength="30">
-        </div>
-        
+       
         <div class="campoForm">
             <label>Nombre de Usuario:</label>
             <input id="IDusuario" type="text" placeholder="Cree un nombre para su uruario" maxlength="30">
@@ -44,6 +39,11 @@
         <label>Contraseña:</label>
         <input id="IDcontrasenia" type="password" placeholder="Cree una contraseña" maxlength="10">
         </div>
+
+        <div class="campoForm">
+            <label>Verifique su contraseña:</label>
+            <input id="IDcontrasenia_verificacion" type="password" placeholder="Verifique su contraseña" maxlength="10">
+            </div>
 
         <button type="submit">Registarse</button>
     </form>

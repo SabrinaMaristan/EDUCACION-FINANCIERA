@@ -1,27 +1,29 @@
 function signUp() {
-    let nombre = document.forms["formulario"]["IDnombre_del_usuario"].value; //creamos las variables con los nombres para que guarden la informacion del input en el html
+    // Creamos las variables con los nombres para que guarden la información del input en el HTML
     let nom_usuario = document.forms["formulario"]["IDusuario"].value;
     let contrasenia = document.forms["formulario"]["IDcontrasenia"].value;
+    let contrasenia_verificacion = document.forms["formulario"]["IDcontrasenia_verificacion"].value;
 
-    //Velifica mediante el id que el formulario (en este caso) sea completado. 
-    if(nombre == ""){
-        alert("Debe llenar todos los campos")
-        return false; // no permite que se envien los datos, interrumpe el ciclo hasta que se cumplan todas las condiciones.
+    // Verifica si todos los campos están completados
+    if (nom_usuario == "" || contrasenia == "" || contrasenia_verificacion == "") {
+        alert("Debe llenar todos los campos");
+        return false; // No permite que se envíen los datos, interrumpe el ciclo hasta que se cumplan todas las condiciones.
     }
 
-    if (nom_usuario.length < 8 || nom_usuario.length > 20)
-    {
+    // Verifica la longitud del nombre de usuario
+    if (nom_usuario.length < 8 || nom_usuario.length > 20) {
         alert("Tu nombre de usuario debe tener entre 8 y 20 caracteres");
         return false;
     }
 
-    if (contrasenia == ""){
-        alert("You need to field all the blanks")
+    // Verifica si las contraseñas coinciden
+    if (contrasenia !== contrasenia_verificacion) {
+        alert("Las contraseñas no coinciden");
         return false;
     }
 
-    alert("Bienvenido/a! Ahora tienes una cuenta!")
-    alert("No los olvides! NOMBRE DE USUARIO: " + nom_usuario + ", y tu CONTRASEÑA: " + contrasenia)
+    // Si todo es correcto, muestra un mensaje de bienvenida
+    alert("¡Bienvenido/a! Ahora tienes una cuenta.");
+    alert("No lo olvides: NOMBRE DE USUARIO: " + nom_usuario + ", y tu CONTRASEÑA: " + contrasenia);
     return true;
-
 }
