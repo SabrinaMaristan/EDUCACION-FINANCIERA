@@ -7,7 +7,7 @@
 /* Estilos para el encabezado */
 .Encabezado {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
   position: fixed;
   top: 0;
   left: 0;
