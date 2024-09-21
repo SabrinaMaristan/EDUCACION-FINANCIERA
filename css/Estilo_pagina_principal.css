@@ -2,6 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
  
+/* 
+Media queries RESPONSIVE 
+
+ ANCHO MAX (mw): 768px (tablet, pc) 
+@media only screen and (max-width: 768px) {
+  .titulo {
+      font-size: 50px;
+  }
+  .button {
+      font-size: 24px;
+      padding: 20px;
+  }
+}
+
+ ANCHO MAX (mw): 480px (celulares) 
+@media only screen and (max-width: 480px) {
+  .titulo {
+      font-size: 40px;
+  }
+  .button {
+      font-size: 20px;
+      padding: 15px;
+  }
+}
+
+*/
+
 body {
   background-image: url(../imgs/ImportanciaFinanzas.jpg); /* Ruta a la imagen */
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
@@ -11,8 +38,6 @@ body {
   margin-top: 4cm; /* Ajusta este valor según el espacio que quieras entre el encabezado y el texto */
  
 }
-
-
 
 .titulo {
   font-family:Space Grotesk;

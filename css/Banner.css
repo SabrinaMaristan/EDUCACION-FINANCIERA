@@ -1,3 +1,28 @@
+/* 
+Media queries RESPONSIVE 
+
+ ANCHO MAX (mw): 768px (tablet, pc) 
+@media only screen and (max-width: 768px) {
+  .Encabezado {
+      grid-template-columns: 1fr 1fr;
+  }
+  .index {
+      font-size: 16px;
+  }
+}
+
+ ANCHO MAX (mw): 480px (celulares) 
+@media only screen and (max-width: 480px) {
+  .Encabezado {
+      grid-template-columns: 1fr;
+  }
+  .index {
+      font-size: 14px;
+  }
+}
+
+*/
+
 /* Estilos para el logo */
 .logo {
   width: 100px;
