@@ -53,13 +53,13 @@ a:hover {
 }
 
 
-#titulo {
+.titulo {
     display: flex;
     justify-content: center;
     font-style: italic;    
 }
 
-#contenido {
+.contenido {
     text-align: justify;
     margin: 2%;
     width: 90%;

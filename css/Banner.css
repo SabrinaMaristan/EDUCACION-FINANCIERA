@@ -1,3 +1,28 @@
+/* 
+Media queries RESPONSIVE 
+
+ ANCHO MAX (mw): 768px (tablet, pc) 
+@media only screen and (max-width: 768px) {
+  .Encabezado {
+      grid-template-columns: 1fr 1fr;
+  }
+  .index {
+      font-size: 16px;
+  }
+}
+
+ ANCHO MAX (mw): 480px (celulares) 
+@media only screen and (max-width: 480px) {
+  .Encabezado {
+      grid-template-columns: 1fr;
+  }
+  .index {
+      font-size: 14px;
+  }
+}
+
+*/
+
 /* Estilos para el logo */
 .logo {
   width: 100px;
@@ -8,6 +33,19 @@
 .Encabezado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #008989;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+#dosL { /* Debido a que hay algunas pags en donde tenemos solo 2 links, cambiamos las fracciones en las que se reparte el banner*/
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 2fr;
   position: fixed;
   top: 0;
   left: 0;
