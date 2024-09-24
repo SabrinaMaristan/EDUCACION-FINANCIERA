@@ -68,3 +68,16 @@ a:hover {
 h2, h3 {
     scroll-margin-top: 120px;  /* Ajusta este valor según el alto de tu encabezado */
 }
+
+/* Flecha que lleva  la parte superior */
+#arrowUP {
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    
+    width: 25px;
+    height: 25px;
+    
+    bottom: 20px;
+    right: 20px;
+}
