@@ -12,7 +12,8 @@
 body{
     font-family: Outfit;
     margin-top: 3cm;
-    margin-left: 1cm;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 a {
@@ -38,7 +39,7 @@ a:hover {
     margin: 0 auto; /* Centrar horizontalmente el contenedor principal */
     width: 75%;
     height: auto;
-    padding: 50px;
+    padding: 100px;
     border-radius: 10px;
 }
 
@@ -56,12 +57,14 @@ a:hover {
 .titulo {
     display: flex;
     justify-content: center;
-    font-style: italic;    
+    font-style: italic;   
 }
 
 .contenido {
     text-align: justify;
     margin: 2%;
-    width: 90%;
 }
 
+h2, h3 {
+    scroll-margin-top: 120px;  /* Ajusta este valor según el alto de tu encabezado */
+}
