@@ -2,51 +2,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
  
-/* 
-Media queries RESPONSIVE 
-
- ANCHO MAX (mw): 768px (tablet, pc) 
+/* Media Queries para dispositivos móviles y tablets */
 @media only screen and (max-width: 768px) {
   .titulo {
-      font-size: 50px;
+    font-size: 45px; /* Reduce el tamaño de la fuente para dispositivos más pequeños */
   }
+
   .button {
-      font-size: 24px;
-      padding: 20px;
+    font-size: 25px; /* Reduce el tamaño de la fuente del botón */
+    padding: 20px; /* Ajusta el padding del botón */
   }
 }
 
- ANCHO MAX (mw): 480px (celulares) 
 @media only screen and (max-width: 480px) {
   .titulo {
-      font-size: 40px;
+    font-size: 35px; /* Ajusta aún más el tamaño de la fuente */
   }
+
   .button {
-      font-size: 20px;
-      padding: 15px;
+    font-size: 13px; /* Tamaño de fuente del botón */
+    padding: 15px; /* Ajuste del padding */
   }
 }
 
-*/
-
+/* Estilos generales */
 body {
   background-image: url(../imgs/ImportanciaFinanzas.jpg); /* Ruta a la imagen */
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center; /* Centra la imagen */
   background-attachment: fixed; 
-  margin-top: 4cm; /* Ajusta este valor según el espacio que quieras entre el encabezado y el texto */
- 
+  margin: 0; /* Elimina márgenes */
+  display: flex; /* Activar flexbox */
+  flex-direction: column; /* Organiza los hijos en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100vh; /* Toma toda la altura de la ventana */
 }
 
 .titulo {
-  font-family:Space Grotesk;
-  position: relative;
-  top: 100px;
-  font-size: 70px;
+  font-family: Space Grotesk;
+  font-size: 70px; /* Tamaño original */
   text-align: center;
+  margin: 0; /* Elimina el margen */
 }
 
+/* Botón */
 .button {
   position: fixed;
   bottom: 0;
@@ -92,3 +93,4 @@ body {
   opacity: 1;
   right: 0;
 }
+
