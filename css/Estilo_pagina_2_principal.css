@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center center; /* Centra la imagen */
     background-attachment: fixed; 
-    margin-top: 3cm; /* Ajusta el valor entre el encabezado y el texto */
+    margin-top: 4cm; /* Ajusta el valor entre el encabezado y el texto */
     margin-left: 1cm;
 }
 
