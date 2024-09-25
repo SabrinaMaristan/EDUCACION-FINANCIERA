@@ -1,13 +1,6 @@
 /*Se importa las fuentes para poder utulizarla*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-@media (max-width: 768px) {
-    #son, #como {
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
-    }
-}
 
 body{
     font-family: Outfit;
@@ -53,7 +46,6 @@ a:hover {
     border-radius: 10px;
 }
 
-
 .titulo {
     display: flex;
     justify-content: center;
@@ -66,17 +58,17 @@ a:hover {
 }
 
 h2, h3 {
-    scroll-margin-top: 120px;  /* Ajusta este valor según el alto de tu encabezado */
+    scroll-margin-top: 120px;  /* Para que, cuando el usuario utilice el link desde el índice, el BANNER no tape el contenido. */
 }
 
-/* Flecha que lleva  la parte superior */
+/* Flecha que lleva la parte superior */
 #arrowUP {
     display: flex;
     position: fixed;
     z-index: 99;
     
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     
     bottom: 20px;
     right: 20px;
