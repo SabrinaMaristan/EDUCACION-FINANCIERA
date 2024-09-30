@@ -4,18 +4,17 @@
 
 body {
     display: block;
-    margin-top: 3cm; /* Ajusta este valor según el espacio que quieras entre el encabezado y el texto */
-    padding: 2%;
+    font-family: Outfit;
+    margin-top: 3cm;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-h1{
+#layer1{
+    
     font-weight: bold;
     unicode-bidi: isolate;
     font-family: Outfit;
-}
-
-p {
-    font-family: Outfit;
     font-size: 18px;
-    text-align: justify;   
+    text-align: justify;
 }
