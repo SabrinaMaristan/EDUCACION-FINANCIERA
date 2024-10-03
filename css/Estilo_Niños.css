@@ -9,10 +9,38 @@ body{
     margin-right: 1cm;
 }
 
-#contenido {
+a {
+    text-decoration: none;
+    color: rgb(29, 28, 36);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#Indice {
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: large;
+    background-color: #a5c3c5; 
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+#contenidoGeneral {
     text-align: justify;
     margin: 2%;
     width: 90%;
+}
+
+#uno, #dos, #tres, #cuatro, #cinco, #seis {
+    display: block;
+    padding: 50px;
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+
 }
 
 p {    
@@ -22,8 +50,9 @@ p {
 .videos_text{
     display:flex;
     justify-content: space-around;
-    background-color: #a5c3c5;  
+    background-color: #a5c3c5;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 .videos{

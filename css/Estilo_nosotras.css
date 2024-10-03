@@ -1,20 +1,57 @@
-/*Se importa las fuentes para poder utulizarla*/
+/* Se importa las fuentes para poder utilizarla */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-
 body {
-    display: block;
-    font-family: Outfit;
-    margin-top: 3cm;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0; /* Elimina márgenes predeterminados */
 }
 
-#layer1{
+#Contenedor {
+    display: flex;
+    width: 100%; /* Respecto a la página. */
+    height: 100vh; /* Altura completa de la ventana */
     
-    font-weight: bold;
-    unicode-bidi: isolate;
+}
+
+#layer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*Los elementos se organizan en columnas*/
+    width: 55%; /* Ocupa la mitad izquierda */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#titulo{
+    font-family: Outfit;
+    color: #037474;
+    font-size: 50px;
+    font-weight: bold; /* Aplica negritas */
+    margin-bottom: 0%;
+    
+}
+#texto{
     font-family: Outfit;
     font-size: 18px;
     text-align: justify;
+   
+    margin-top: 0%;
 }
+
+
+#layer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%; /* Ocupa la mitad izquierda */
+    height: 100%; /* Altura completa de la ventana */
+    background-color: rgb(58, 58, 13);
+    overflow: hidden; /* Para evitar que el contenido sobresalga */
+}
+#imagen {
+    width: 100%;
+    height: 100%; /* Mantiene la proporción */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    max-height: 100%; /* Asegura que no exceda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
