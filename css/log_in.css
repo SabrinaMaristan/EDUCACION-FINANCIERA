@@ -50,13 +50,13 @@ h1 {
     border-radius: 25px;
     width: 300px;
     height: 40px;
-    border-style: solid;/*Binda un borde solido*/
+    border-style: none;
     padding-left: 10px; /* Añade relleno a la izquierda del texto del input */
 }
 
 button {
     padding: 10px 15px;
-    border-style: solid; 
+    border-style: none; 
     border-color: rgb(96, 94, 94);
     border-radius: 25px;
     color: rgb(0, 0, 0);
