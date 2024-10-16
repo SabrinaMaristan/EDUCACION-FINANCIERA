@@ -46,14 +46,14 @@ body {
     width: 400px;
     height: 300px;
     border-radius: 3%;
-    background-color: #3a72a0; 
+    background-color: #c2c889; 
    /* #09486b azul oscuro */
 }
 
 .adulto:hover{
     transform: scale(1.05);
     color: rgb(222, 234, 222);
-    background-color: rgb(27, 107, 164);
+    background-color: #b4be63;
 }
 
 .ninio {
