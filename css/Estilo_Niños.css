@@ -55,16 +55,16 @@ p {
 }
 
 .videos {
-    display: flex; /* Usar flexbox para alinear los videos en fila */
+    display: block; /* Usar flexbox para alinear los videos en fila */
     justify-content: space-around; /* Espaciado uniforme entre los videos */
     margin: 20px 0; /* Añadir margen superior e inferior si es necesario */
+    
 }
 
 .videos iframe {
-    width: 300px; /* Ajusta el ancho según sea necesario */
-    height: 200px; /* Ajusta la altura según sea necesario */
     border-radius: 10px; /* Bordes redondeados */
-    margin: 0 10px; /* Margen entre los iframes */
+    margin: 0 10px;
+    align-items: center; 
 }
 
 .materiales {
@@ -81,6 +81,30 @@ p {
     border-radius: 10px; 
 }
 
+.objetos{
+    font-size: 18px;
+    padding-left: 100px;   
+}
+
+.libro {
+    display: flex;
+    justify-content: space-around; 
+    margin: 20px 0; 
+    flex-wrap: wrap;
+}
+
+.libro img {
+    width: 250px; /* Ajusta según sea necesario */
+    height: auto; 
+    margin: 0 10px; 
+    border-radius: 10px; 
+}
+
+.tituloslibros{
+    display: flex;
+    flex-direction: row;
+
+}
 
 ul{
     font-size: 18px;
@@ -97,32 +121,4 @@ ul{
     
     bottom: 20px;
     right: 20px;
-}
-.objetos{
-    font-size: 18px;
-    padding-left: 100px;   
-}
-
-.libro {
-    text-align: center; /* Centrar el contenido */
-    margin: 20px; /* Espacio entre los libros */
-}
-
-.libro img {
-    width: 250px; /* Ajusta según sea necesario */
-    height: auto; 
-    margin: 0 10px; 
-    border-radius: 10px; 
-}
-
-.libro a {
-    display: block; /* Asegura que el enlace ocupe toda la línea */
-    margin-top: 10px; /* Espacio entre la imagen y el título */
-    text-decoration: none; /* Sin subrayado */
-    color: rgb(29, 28, 36); /* Color del enlace */
-    font-size: 18px; /* Tamaño de la fuente para el título */
-}
-
-.libro a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón */
 }
