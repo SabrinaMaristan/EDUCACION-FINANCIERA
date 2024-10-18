@@ -57,14 +57,12 @@ p {
 .videos {
     display: block; /* Usar flexbox para alinear los videos en fila */
     justify-content: space-around; /* Espaciado uniforme entre los videos */
-    margin: 20px 0; /* Añadir margen superior e inferior si es necesario */
+    margin: 20px; /* Añadir margen superior e inferior si es necesario */
     
 }
 
 .videos iframe {
     border-radius: 10px; /* Bordes redondeados */
-    margin: 0 10px;
-    align-items: center; 
 }
 
 .materiales {
