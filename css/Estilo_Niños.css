@@ -54,11 +54,19 @@ p {
     border-radius: 10px;
 }
 
-.videos{
-    display: block;
-    border-radius: 50%;
-    
+.videos {
+    display: flex; /* Usar flexbox para alinear los videos en fila */
+    justify-content: space-around; /* Espaciado uniforme entre los videos */
+    margin: 20px 0; /* Añadir margen superior e inferior si es necesario */
 }
+
+.videos iframe {
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    height: 200px; /* Ajusta la altura según sea necesario */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 10px; /* Margen entre los iframes */
+}
+
 ul{
     font-size: 18px;
 }
