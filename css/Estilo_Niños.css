@@ -5,8 +5,8 @@ body{
     display: block;
     font-family: Outfit;
     margin-top: 3cm;
-    margin-left: 1cm;
-    margin-right: 1cm;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 a {
@@ -27,24 +27,23 @@ a:hover {
     border-radius: 10px;
 }
 
-
 #contenidoGeneral {
     text-align: justify;
     margin: 2%;
-    width: 90%;
 }
 
 #uno, #dos, #tres, #cuatro, #cinco, #seis {
     display: block;
-    padding: 50px;
-    width: 85%;
+    margin: 0 auto; /* Centrar horizontalmente el contenedor principal */
+    width: 75%;
     height: auto;
+    padding: 100px;
     border-radius: 10px;
-
 }
 
 p {    
     font-size: 18px;
+    margin: 0; /* Eliminar el margen por defecto de los párrafos */
 }
 
 .videos_text{
@@ -59,4 +58,20 @@ p {
     display: block;
     border-radius: 50%;
     
+}
+ul{
+    font-size: 18px;
+}
+
+/* Flecha que lleva la parte superior */
+#arrowUP {
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    
+    width: 50px;
+    height: 50px;
+    
+    bottom: 20px;
+    right: 20px;
 }
