@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Inicio de Sesión</title>
-    <script src="../js/log_in.js"></script>
     <link rel="stylesheet" href="../css/log_in.css"> 
     <link rel="stylesheet" href="../css/Banner.css">
 </head>
@@ -30,14 +30,14 @@
 
     <form id="form" onsubmit="return logIn()">
 
-        <div class="campoForm">
+        <div class="campoForm" action="../php/login.php" method="POST">
         <label>Nombre:</label>
-        <input id="IDuser" type="text" placeholder="Nombre" maxlength="30">
+        <input id="IDuser" type="text" placeholder="Nombre" maxlength="30" required>
         </div>
 
         <div class="campoForm">
         <label>Contraseña:</label>
-        <input id="IDpassword" type="password" placeholder="Crea una contraseña" maxlength="10">
+        <input id="IDpassword" type="password" placeholder="Crea una contraseña" maxlength="10" required>
         </div>
 
 
@@ -48,5 +48,6 @@
 
 <div id="menssage_id"></div>
 
+<script src="../js/log_in.js"></script>
 </body>
 </html>

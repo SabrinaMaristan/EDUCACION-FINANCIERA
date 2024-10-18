@@ -2,44 +2,47 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-//Esto es por si php no funciona, tira error
 
-// Connecting to the MySQL database
+// Conexión a la base de datos MySQL
 $servername = "localhost";
-$username = "root"; // Default username for XAMPP
-$password = ""; // Default password for XAMPP
+$username = "root"; // Nombre de usuario por defecto en XAMPP
+$password = ""; // Contraseña por defecto en XAMPP
 $dbname = "registration";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname); //se verifican las variables.
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// Verificar la conexión
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if form is submitted
+// Comprobar si el formulario ha sido enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve and sanitize form inputs
-    $user = htmlspecialchars($_POST['username']);
-    $pass = htmlspecialchars($_POST['password']);
+    // Obtener y sanitizar los inputs del formulario
+    $user = htmlspecialchars(trim($_POST['username']));
+    $pass = htmlspecialchars(trim($_POST['password']));
 
-    // Hash the password for security-encripta
-    $hashed_password = password_hash($pass, PASSWORD_BCRYPT);//encripta 
+    // Encriptar la contraseña para mayor seguridad
+    $hashed_password = password_hash($pass, PASSWORD_BCRYPT);
 
-    // Prepare the SQL statement to prevent SQL injection - envia los datos a servidor
-    //stmt: statement - declaración
-    $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)"); //signos de preguntas porque esos datos varian segun el usuario
-    $stmt->bind_param("ss", $user, $hashed_password);//guarda la contraseña encriptada
+    // Preparar la sentencia SQL para evitar inyecciones SQL
+    $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+    $stmt->bind_param("ss", $user, $hashed_password);
 
-    // Execute the statement
+    // Ejecutar la sentencia
     if ($stmt->execute()) {
-        echo "Registration successful!";
+        // Guardar mensaje en la sesión
+        $_SESSION['message'] = "¡Bienvenido/a! Ahora tienes una cuenta. NOMBRE DE USUARIO: $user.";
+        // Redirigir a index.html después del registro exitoso
+        header("Location: ..\SPANISH\index.html");
     } else {
         echo "Error: " . $stmt->error;
     }
 
-    // Close statement and connection
+
+
+    // Cerrar la declaración y la conexión
     $stmt->close();
     $conn->close();
 }
