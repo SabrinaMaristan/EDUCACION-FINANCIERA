@@ -84,28 +84,55 @@ p {
     padding-left: 100px;   
 }
 
-.libro {
-    display: flex;
-    justify-content: space-around; 
-    margin: 20px 0; 
-    flex-wrap: wrap;
+
+.libros{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 10px;
 }
 
-.libro img {
-    width: 250px; /* Ajusta según sea necesario */
+.libro1{
+    grid-column-start: 1; 
+        width: 250px; 
     height: auto; 
     margin: 0 10px; 
-    border-radius: 10px; 
+    border-radius: 10px;
 }
-
-.tituloslibros{
-    display: flex;
-    flex-direction: row;
-
-}
-
-ul{
+.libro1.a{
+    grid-column-start: 1; 
+    grid-row: 2; 
     font-size: 18px;
+    text-align: center;
+}
+
+.libro2{
+    grid-column: 2; 
+    width: 250px; 
+    height: auto; 
+    margin: 0 10px; 
+    border-radius: 10px;
+}
+.libro2.a{
+    grid-column: 2; 
+    grid-row: 2;
+    font-size: 18px; 
+    text-align: center;
+}
+
+.libro3{
+    grid-column: 3; 
+    width: 250px; 
+    height: auto; 
+    margin: 0 10px; 
+    border-radius: 10px;
+}
+.libro3.a{
+    grid-column: 3; 
+    grid-row: 2; 
+    font-size: 18px;
+    text-align: center;
 }
 
 /* Flecha que lleva la parte superior */
