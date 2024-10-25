@@ -91,20 +91,16 @@ p {
     justify-content: space-around; 
     margin: 20px 0; 
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .libro img {
-    width: 250px; /* Ajusta según sea necesario */
-    height: auto; 
+    width: auto; /* Ajusta según sea necesario */
+    height: 350px; 
     margin: 0 10px; 
     border-radius: 10px; 
 }
 
-.tituloslibros{
-    display: flex;
-    flex-direction: row;
-
-}
 
 ul{
     font-size: 18px;
