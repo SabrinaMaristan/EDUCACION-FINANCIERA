@@ -1,59 +1,61 @@
 <?php
-// Include database connection
-$servername = "localhost";
-$dbname = "registration";  // Your database name
-$username = "root";   // Default XAMPP username
-$password = "";       // Default XAMPP password (empty)
+// Configuración de la base de datos
+$servername = "localhost"; // Servidor de la base de datos
+$username = "root"; // Usuario de la base de datos
+$password = ""; // Contraseña de la base de datos
+$dbname = "registration"; // Nombre de la base de datos
 
-// Create connection
+// Crear conexión con la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// Verificar la conexión
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Check if form is submitted
+// Inicializar variable para el mensaje
+$message = "";
+
+// Comprobar si se ha enviado el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    // Recoger los datos del formulario
+    $user = $_POST['username']; // Nombre de usuario
+    $pass = $_POST['password']; // Contraseña
 
-    // Check if username and password are not empty
-    if (empty($username) || empty($password)) {
-        header("Location: ../SPANISH/index.html?error=Please fill in all fields");
-        exit();
-    }
-
-    // Prepare SQL query to fetch user
+    // Consulta para verificar si el usuario está registrado
     $sql = "SELECT * FROM users WHERE username = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $stmt = $conn->prepare($sql); // Preparar la consulta
+    $stmt->bind_param("s", $user); // Vincular el parámetro
+    $stmt->execute(); // Ejecutar la consulta
+    $result = $stmt->get_result(); // Obtener el resultado
 
-    // Check if user exists
-    if ($result->num_rows === 1) {
-        $user = $result->fetch_assoc();
-
-        // Verify the password
-        if (password_verify($password, $user['password'])) {
-            // Start a session and set user details (successful login)
-            session_start();
-            $_SESSION['username'] = $user['username'];
-            header("Location: ../SPANISH/index.html?success=¡Has iniciado sesión correctamente!");
-            exit(); // Asegúrate de salir después de la redirección
+    // Verificar si se encontró el usuario
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc(); // Obtener los datos del usuario
+        // Verificar si la contraseña es correcta
+        if (password_verify($pass, $row['password'])) {
+            $message = "Inicio de sesión exitoso. Redirigiendo..."; // Mensaje de éxito
+            echo "<script>
+                    alert('$message');
+                    window.location.href = 'http://localhost/SPANISH/index.html'; // Redirigir al usuario 
+                </script>";         
+            exit(); // Salir del script
         } else {
-            // Incorrect password
-            header("Location: ../SPANISH/index.html?error=Incorrect password");
-            exit();
+            $message = "Contraseña incorrecta. Inténtelo de nuevo." . $stmt->error; // Mensaje de error de contraseña
         }
     } else {
-        // User not found
-        header("Location: ../SPANISH/index.html?error=User does not exist");
-        exit();
+        $message = "El usuario no está registrado. Verifique los datos."  . $stmt->error; // Mensaje si el usuario no existe
     }
 
-    $stmt->close();
-    $conn->close();
+    $stmt->close(); // Cerrar la declaración
+}
+
+$conn->close(); // Cerrar la conexión
+// Si hay un mensaje, se muestra en una alerta
+if (!empty($message)) {
+    echo "<script>
+            alert('$message');
+            window.location.href = 'http://localhost/SPANISH/InicioSesion.html'; // Redirigir de vuelta al formulario
+          </script>";
 }
 ?>
