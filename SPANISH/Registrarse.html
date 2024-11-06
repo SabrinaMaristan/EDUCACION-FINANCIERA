@@ -5,6 +5,38 @@
     <title>Regístrate</title>
     <link rel="stylesheet" href="../css/log_in.css">
     <link rel="stylesheet" href="../css/Banner.css">
+
+    <!-- JavaScript -->
+    <script>
+        // Función para mostrar el mensaje en una alerta
+        function showAlert(message) {
+            alert(message);
+        }
+
+        // Validar el formulario antes de enviarlo
+        function validateForm() {
+            var username = document.getElementById("username").value; // Obtener el nombre de usuario
+            var password = document.getElementById("password").value; // Obtener la contraseña
+
+            // Validar el nombre de usuario
+            if (username.length < 5) {
+                showAlert("El nombre de usuario debe tener al menos 5 caracteres.");
+                return false; // Evitar el envío del formulario
+            }
+            // Validar la contraseña
+            if (password.length < 8) {
+                showAlert("La contraseña debe tener al menos 8 caracteres.");
+                return false; // Evitar el envío del formulario
+            }
+            if (!/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+                showAlert("La contraseña debe contener al menos una letra mayúscula y un número.");
+                return false; // Evitar el envío del formulario
+            }
+
+            return true; // Permitir el envío del formulario
+        }
+    </script>
+
 </head>
 <body>
 

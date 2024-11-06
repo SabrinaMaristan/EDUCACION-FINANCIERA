@@ -5,6 +5,23 @@
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="../css/log_in.css"> 
     <link rel="stylesheet" href="../css/Banner.css">
+
+    <!-- JavaScript -->
+    <script>
+        // Función para mostrar el mensaje en una alerta
+        function showAlert(message) {
+            alert(message);
+        }
+
+        // Validar el formulario antes de enviarlo
+        function validateForm() {
+            var username = document.getElementById("username").value; // Obtener el nombre de usuario
+            var password = document.getElementById("password").value; // Obtener la contraseña
+
+            return true; // Permitir el envío del formulario si todas las validaciones son correctas
+        }
+    </script>
+
 </head>
 <body>
     
@@ -44,6 +61,5 @@
     </form>
 </div>
 
-<script src="../js/log_in.js"></script>
 </body>
 </html>
