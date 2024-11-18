@@ -1,6 +1,6 @@
 <?php
 // Configuración de la base de datos
-$servername = "localhost"; // Servidor de la base de datos
+$servername = "sabrinamaristan.github.io"; // Servidor de la base de datos
 $username = "root"; // Usuario de la base de datos
 $password = ""; // Contraseña de la base de datos
 $dbname = "registration"; // Nombre de la base de datos
