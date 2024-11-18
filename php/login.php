@@ -1,6 +1,6 @@
 <?php
 // Configuración de la base de datos
-$servername = "sabrinamaristan.github.io/EDUCACION-FINANCIERA"; // Servidor de la base de datos
+$servername = "localhost"; // Servidor de la base de datos
 $username = "root"; // Usuario de la base de datos
 $password = ""; // Contraseña de la base de datos
 $dbname = "registration"; // Nombre de la base de datos
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "Inicio de sesión exitoso. Redirigiendo..."; // Mensaje de éxito
             echo "<script>
                     alert('$message');
-                    window.location.href = 'http://sabrinamaristan.github.io/EDUCACION-FINANCIERA/SPANISH/index.html'; // Redirigir al usuario 
+                    window.location.href = 'http://localhost/SPANISH/index.html'; // Redirigir al usuario 
                 </script>";         
             exit(); // Salir del script
         } else {
@@ -55,7 +55,7 @@ $conn->close(); // Cerrar la conexión
 if (!empty($message)) {
     echo "<script>
             alert('$message');
-            window.location.href = 'http://sabrinamaristan.github.io/EDUCACION-FINANCIERA/SPANISH/InicioSesion.html'; // Redirigir de vuelta al formulario
+            window.location.href = 'http://localhost/SPANISH/InicioSesion.html'; // Redirigir de vuelta al formulario
           </script>";
 }
 ?>
