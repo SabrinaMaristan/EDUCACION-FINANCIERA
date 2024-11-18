@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $message = "Inicio de sesión exitoso. Redirigiendo..."; // Mensaje de éxito
             echo "<script>
                     alert('$message');
-                    window.location.href = 'http://localhost/SPANISH/index.html'; // Redirigir al usuario 
+                    window.location.href = 'http://sabrinamaristan.github.io/EDUCACION-FINANCIERA/SPANISH/index.html'; // Redirigir al usuario 
                 </script>";         
             exit(); // Salir del script
         } else {
@@ -55,7 +55,7 @@ $conn->close(); // Cerrar la conexión
 if (!empty($message)) {
     echo "<script>
             alert('$message');
-            window.location.href = 'http://localhost/SPANISH/InicioSesion.html'; // Redirigir de vuelta al formulario
+            window.location.href = 'http://sabrinamaristan.github.io/EDUCACION-FINANCIERA/SPANISH/InicioSesion.html'; // Redirigir de vuelta al formulario
           </script>";
 }
 ?>
